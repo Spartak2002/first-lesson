@@ -58,8 +58,8 @@ export default function App() {
     let tmp = [...people]
     let index = tmp.findIndex(item => item.id == id)
     tmp[index].salary -= 57_000
-    if (tmp[index].salary <= 0){
-      setPeople(tmp[index].salary = 0) 
+    if (tmp[index].salary <= 57_000){
+      setPeople(tmp[index].salary = 57_000) 
     }
     setPeople(tmp)
   }
